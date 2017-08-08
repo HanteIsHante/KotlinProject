@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="msg_center_tab_text">#d0d7e8</color>
+    <color name="msg_center_tool_bar">#6079d2</color>
+    <color name="msg_center_tab">#d0d7e8</color>
+    <color name="msg_num_bg">#ef221d</color>
+    <color name="msg_system_bg_color">#f26a8a</color>
+    <color name="msg_notify_time_bg">#e0dfdd</color>
+    <color name="msg_activity_bg">#54c3c2</color>
+    <color name="click_read_article">#369fe1</color>
+    <color name="activity_title">#232323</color>
+    <color name="activity_desc">#515151</color>
+    <color name="system_color">#6079d2</color>
 </resources>

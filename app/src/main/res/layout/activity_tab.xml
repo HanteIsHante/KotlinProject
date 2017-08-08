@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ht.kotlinproject.TabActivity">
+
+    <FrameLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/msg_center_tool_bar"
+        android:orientation="vertical">
+
+        <!--弄两个布局，为了执行动画切换避免底部为白色背景-->
+        <FrameLayout
+            android:id="@+id/ToolBar_Top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/msg_center_tool_bar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frame_layout_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+
+                    android:text="应用和游戏"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/buttom_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/activity_title"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frame_layout_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:text="电影和图书"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/buttom_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/activity_title"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="33"
+                    android:text="抢先体验"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/buttom_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/activity_title"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
