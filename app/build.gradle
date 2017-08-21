@@ -34,6 +34,10 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
     testCompile 'junit:junit:4.12'
+    compile 'io.intercom.android:intercom-sdk:3.+'
+
+
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'// 百度统计
 }
 repositories {
     mavenCentral()

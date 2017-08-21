@@ -18,6 +18,8 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+import io.intercom.android.sdk.Intercom;
+
 /**
  * Created By HanTe
  */
@@ -27,6 +29,9 @@ public class MyApplictaion extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+
+        Intercom.initialize(this, "android_sdk-44b03e24ca1dbce18678546e75f6b98eff348c20", "h46rtesz");
         // Application 中注册
         PushAgent mPushAgent = PushAgent.getInstance(this);
         //注册推送服务，每次调用register方法都会回调该接口
